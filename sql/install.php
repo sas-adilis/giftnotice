@@ -36,7 +36,6 @@ $sql[] = 'CREATE TABLE IF NOT EXISTS `'._DB_PREFIX_.'gift_notice` (
 	`date_upd` datetime NOT NULL, 
 	`note` text,
 	PRIMARY KEY (`id_gift_notice`),
-	KEY `id_shop_group` (`id_shop_group`),
 	KEY `id_shop` (`id_shop`)
 ) ENGINE='._MYSQL_ENGINE_.' DEFAULT CHARSET=utf8;';
 

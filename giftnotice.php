@@ -1,6 +1,11 @@
 <?php
 
-namespace giftnotice;
+use PrestaShop\PrestaShop\Adapter\Product\PriceFormatter;
+use PrestaShop\PrestaShop\Core\Module\WidgetInterface;
+
+if (!defined('_PS_VERSION_')) {
+    exit;
+}
 
 class GiftNotice extends Module implements WidgetInterface
 {
@@ -34,7 +39,14 @@ class GiftNotice extends Module implements WidgetInterface
         return parent::uninstall();
     }
 
+    public function renderWidget($hookName = null, array $configuration = [])
+    {
 
+    }
 
+    public function getWidgetVariables($hookName = null, array $configuration = [])
+    {
+
+    }
 
 }
